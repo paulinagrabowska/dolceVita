@@ -1,0 +1,26 @@
+@mixin medium {
+    @media all and (min-width: #{$bp-md}) {
+        // bedziemy dodawac różną zawartość z kodu scss
+        @content;
+    }
+}
+
+@mixin large {
+    @media all and (min-width: #{$bp-lg}) {
+        @content;
+    }
+}
+
+// h1 {
+//     font-size: $font-base * 4;
+//     // zapytanie tzw. śródliniowe
+//     @include medium() {
+//         color: green;
+//         font-size: $font-base * 5;
+//     }
+//     @include large() {
+//         color: red;
+//         font-size: $font-base * 6;
+//     }
+// }
+

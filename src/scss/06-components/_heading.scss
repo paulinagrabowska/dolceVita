@@ -1,0 +1,14 @@
+.heading {
+    
+    &--h1{
+        color: $white;
+        font-size: $font-base * 5;
+    }
+
+    &--h2{
+        font-size: $font-base * 3.5;
+        width: 100%;
+        text-align: center;
+        padding-top: $grid-base * 2;
+    }
+}

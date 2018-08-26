@@ -1,0 +1,18 @@
+.nav {
+    &__item {
+        display: block;
+        font-size: $font-base * 2.6;
+        padding-bottom: $grid-base * 2;
+        
+        @include medium() {
+            display: inline-block;
+            width: 23%;
+        }
+        
+    }
+    
+    &__link {
+        color: $white;
+        text-decoration: none;
+    }
+}

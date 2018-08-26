@@ -1,0 +1,20 @@
+// kolory
+$color1: #eff0f3;
+$color2: #74030e;
+$color3: #132601;
+
+$white: $color1;
+$red: $color2;
+$green: $color3;
+
+// fonty
+$font-base: 10px;
+
+// grid
+$grid-base: $font-base;
+// odstępy między koumnami
+$gutter: 1.5 * $grid-base;
+
+// breakpoint dla RWD
+$bp-md: 768px;
+$bp-lg: 1240px;
