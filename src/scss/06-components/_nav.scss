@@ -1,18 +1,30 @@
-.nav {
-    &__item {
-        display: block;
-        font-size: $font-base * 2.6;
-        padding-bottom: $grid-base * 2;
-        
-        @include medium() {
-            display: inline-block;
-            width: 23%;
-        }
-        
-    }
-    
-    &__link {
-        color: $white;
-        text-decoration: none;
-    }
+.nav__list:hover .nav__item  {
+        opacity: 0.5;
+        transition-duration: .5s;
+        filter: blur(2px);
 }
+
+.nav__list .nav__item {
+    font-size: $font-base * 3.2;
+    @include medium() {
+        display: inline-block;
+        width: 23%;
+    }
+    &:hover {
+        opacity: 1;
+        filter: blur(0px); 
+        }
+}
+    
+.nav__link {
+    color: $white;
+    text-decoration: none;
+    padding: $grid-base;
+    border-radius: $grid-base * .4;
+    display: block;
+    transition-duration: .5s;
+    
+}
+
+
+

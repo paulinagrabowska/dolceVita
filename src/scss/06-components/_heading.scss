@@ -1,14 +1,37 @@
 .heading {
-    
     &--h1{
-        color: $white;
-        font-size: $font-base * 5;
+        color: $red;
+        font-size: $font-base * 6;
+        text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+        @include medium() {
+            font-size: $font-base * 8;
+        }
+        @include large() {
+            font-size: $font-base * 10;
+        }
+        
     }
 
     &--h2{
-        font-size: $font-base * 3.5;
+        font-family: 'Great Vibes', cursive;
+        //font-family: 'Montserrat', sans-serif;
+        font-size: $font-base * 6;
         width: 100%;
         text-align: center;
-        padding-top: $grid-base * 2;
+        padding: $grid-base * 2;
+        margin-bottom: $grid-base * 3;
+        color: rgb(168, 170, 155);
+        letter-spacing: $font-base *.8;
+        position: relative;
+    }
+
+    &--h3{
+        font-size: $font-base * 3;
+        font-weight: bold;
+        padding-top: $grid-base * 3;
+        color: $red;
+
     }
 }
+
+

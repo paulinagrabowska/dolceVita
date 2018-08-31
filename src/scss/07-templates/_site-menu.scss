@@ -1,0 +1,30 @@
+.site-menu {
+    color: white;
+    .menu__item {
+        min-width: $font-base * 30;
+        min-height: $font-base * 30;
+    }
+    .menu__salad, .menu__pizza, .menu__fish {
+        background: url('../img/salad.png') center/cover no-repeat;
+        position: relative;
+    }
+    
+    .menu__pizza {
+        background: url('../img/pica.png') center/cover no-repeat;
+    }
+    
+    .menu__fish {
+        background: url('../img/ryba.png') center/cover no-repeat;
+    }
+
+    &__button {
+        transform: scale(.8);
+        padding: 2%;
+
+        &:hover {
+            transform: scale(.95);
+        }
+    }
+
+}
+

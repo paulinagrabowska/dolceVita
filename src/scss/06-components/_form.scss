@@ -1,0 +1,46 @@
+.form {
+    width: 95%;
+
+    @include medium() {
+        width: 60%;
+    }
+
+    @include large() {
+        width: 40%;
+    }
+
+    &__input {
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        display: block;
+        width: 100%;
+        font-size: $font-base *1.5;
+        padding: $grid-base * 1.4;
+        background-color: rgba(0, 0, 0, 0);
+        border:none;
+        margin-bottom: $grid-base * 1.5;
+        border-bottom: 2px solid $white;
+        border-radius: $grid-base * 5;
+        transition-duration: .5s;
+        // usunięcie niebieskiej ramki w Chrome
+        outline: 0;
+
+        &:focus {
+            background-color: rgba(0, 0, 0, 0.281);
+            color: $green;
+        }
+
+        &::placeholder {
+            color: rgba(255, 255, 255, .4);
+            letter-spacing: $font-base *.4;
+        }
+    }
+    .btn--outline {
+        font-size: $font-base * 4;
+        letter-spacing: $font-base * 0.5;
+    }
+}
+
+.site-contact__h2 {
+    color: white;
+}

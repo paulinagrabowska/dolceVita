@@ -1,7 +1,11 @@
 .site-header {
     background: url('../img/start.jpeg') center/cover no-repeat;
+    background-attachment: fixed;
     height: 100vh;
     position: relative;
+    width: 98%;
+    margin: 1% auto;
+
 
     &__blackout {
         width: 100%;
@@ -21,6 +25,8 @@
         bottom: 40%;
         width: 100%;
         text-align: center;
+        animation: h1--animation 1.5s forwards 0s ease-in;
+        transition-duration: .5s;
     }
 
     // element wg BEM
@@ -30,5 +36,7 @@
         margin: 0 auto;
         left: 0;
         right: 0;
+        padding: 1%;
+        letter-spacing: $font-base * .3;
     }
 }

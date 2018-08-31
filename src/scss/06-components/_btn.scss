@@ -13,9 +13,13 @@
 
     &--red {
         background-color: $red;
-
+        background: url('../img/tomato.png') center/cover no-repeat;
+        padding-top:  $grid-base * 10;
+        opacity: .8;
+        transition-duration: .5s;
         &:hover {
-           background-color: darken($red, 10%); 
+           opacity: 1;
+           transform: scale(1.2);
         }
     }
 
@@ -24,6 +28,18 @@
 
         &:hover {
            background-color: darken($green, 10%); 
+        }
+    }
+
+    &--outline {
+        background-color: transparent;
+        border: $font-base * .2 solid $white;
+        border-radius: $font-base*.15 $font-base*5;
+        font-family: 'Great Vibes', cursive;
+        font-weight: 100;
+
+        &:hover {
+           background-color: rgba(0, 0, 0, .3)
         }
     }
 

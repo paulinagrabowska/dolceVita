@@ -1,3 +1,10 @@
 .blackout {
-    background-color: rgba(0, 0, 0, .3);
+    position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: linear-gradient(to right, #8e9eab, #eef2f3);
+	// background-image: linear-gradient( 135deg, #f5f7fa 10%, #c3cfe2 100%);
+	opacity: .2; 
 }

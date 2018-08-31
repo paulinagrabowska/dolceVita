@@ -1,0 +1,11 @@
+.site-menu {
+    .menu__pic {
+        opacity: .8;
+        transition-duration: .5s;
+        &:hover {
+            opacity: 1;
+        }
+    }
+
+}
+

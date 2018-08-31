@@ -1,0 +1,28 @@
+
+.image-box-circle {
+    border-radius: 50%;
+    padding: $font-base * 5;
+    width: $font-base * 10;
+    height: $font-base * 10;
+    margin: 0 auto;
+    border: $font-base * .4 solid $red;
+    position: relative;
+    transition-duration: .5s; 
+    opacity: .7; 
+    &:hover {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+    img {
+        width: $font-base * 9;
+        height:  $font-base * 9;
+        position: absolute;
+        margin: auto;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border-radius: 50%;  
+    }
+
+}

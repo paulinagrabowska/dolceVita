@@ -4,14 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
     <title>Restauracja Dolce Vita</title>
 </head>
 <body>
-    <header class="site-header">
+    <header class="site-header" id="top">
         <div class="blackout site-header__blackout"></div>
         <nav class="site-header__nav">
-            <ul>
+            <ul class="nav__list">
                 <li class="nav__item"><a href="#start" class="nav__link">Start</a></li>
                 <li class="nav__item"><a href="#menu" class="nav__link">Menu</a></li>
                 <li class="nav__item"><a href="#location" class="nav__link">Lokalizacja</a></li>
@@ -22,28 +26,148 @@
         <a href="#menu" class="btn btn--red btn--circle site-header__button">Menu</a>
     </header>
     <main>
-        <section id="start" class="section">
+        <section id="start" class="section site-start">
             <h2 class="heading--h2">Start</h2>
-            <div class="container">
+            <div class="container wow fadeInLeft">
                 <div class="row">
-                    <div class="col col--md50 col--lg25">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt vel odit ducimus officia libero, quia quibusdam soluta et harum iste atque cumque dolore, quasi fugiat. Libero perferendis ipsum autem nisi.</div>
-                    <div class="col col--md50 col--lg25">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt vel odit ducimus officia libero, quia quibusdam soluta et harum iste atque cumque dolore, quasi fugiat. Libero perferendis ipsum autem nisi.</div>
-                    <div class="col col--md50 col--lg25">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt vel odit ducimus officia libero, quia quibusdam soluta et harum iste atque cumque dolore, quasi fugiat. Libero perferendis ipsum autem nisi.</div>
-                    <div class="col col--md50 col--lg25">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt vel odit ducimus officia libero, quia quibusdam soluta et harum iste atque cumque dolore, quasi fugiat. Libero perferendis ipsum autem nisi.</div>
+                    <div class="col col--md100 col--lg33">
+                        <div class="site-start__item border">
+                            <div class="image-box-circle">
+                                <img src="img/start-1.png" alt="skladniki">
+                            </div>
+                            <h3 class="heading--h3 site-start__h3 text-center ">Świeże składniki!</h3>
+                        <p class="text-center site-start__p par">Nasze dania zawsze wykonujemy tylko ze świeżych produktów, prosto od lokalnych dostawców.</p>
+                        </div>
+                    </div>
+                    <div class="col col--md100 col--lg33">
+                        <div class="site-start__item border">
+                            <div class="image-box-circle">
+                                <img src="img/start-2.png" alt="wykonanie">
+                            </div>
+                            <h3 class="heading--h3 site-start__h3 text-center">Staranne wykonanie!</h3>
+                            <p class="text-center site-start__p par"> Dbamy nie tylko o smak naszych dań, ale również o estetykę podania.</p>
+                        </div>
+                    </div>
+                    <div class="col col--md100 col--lg33">
+                        <div class="site-start__item border">
+                            <div class="image-box-circle">
+                                <img src="img/start-3.png" alt="smak">
+                            </div>
+                            <h3 class="heading--h3 site-start__h3 text-center">Wyjątkowy smak!</h3>
+                            <p class="text-center site-start__p par">Każde danie posiada wyjątkowy i niepowtażalny charakter, dzięki dobranych składnikom.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-        <section id="menu" class="section">
-            <h2 class="heading--h2">Menu</h2>
+        <section id="menu" class="section site-menu">
+            <h2 class="heading--h2">Menu na dziś</h2>
+            <div class="container wow fadeInRight">
+                <div class="row">
+                    <div class="col col--md50 col--lg33">
+                        <div class="menu__item text-center menu__pizza border menu__pic">
+                            <h3 class="heading--h3 site-menu__h3 "></h3>
+                        </div>
+                    </div>
+                    <div class="col col--md50 col--lg33">
+                        <div class="menu__item text-center border">
+                            <h3 class="heading--h3 site-menu__h3 ">Łosoś pieczony</h3>
+                            <p class="par">Filet z łososia podawany z sałatką ze świeżych warzyw i sosem balsamicznym</p>
+                            <a href="#contact" class="btn btn--red btn--circle site-menu__button">Zamów!</a>
+                        </div>
+                    </div>
+                    <div class="col col--md50 col--lg33">
+                        <div class="menu__item text-center menu__salad border menu__pic">
+                            <h3 class="heading--h3 site-menu__h3 "></h3>
+                        </div>
+                        </div>
+                    <div class="col col--md50 col--lg33">
+                        <div class="menu__item text-center border">
+                            <h3 class="heading--h3 site-menu__h3 ">Pizza Rucola</h3>
+                            <p class="par">Szynka parmeńska, pomidorki koktajlowe, mozarella, rucola i oregano</p>
+                            <a href="#contact" class="btn btn--red btn--circle site-menu__button">Zamów!</a>
+                        </div>
+                    </div>
+                    <div class="col col--md50 col--lg33">
+                        <div class="menu__item text-center menu__fish border menu__pic">
+                            <h3 class="heading--h3 site-menu__h3"></h3>
+                        </div>
+                    </div>
+                    <div class="col col--md50 col--lg33">
+                        <div class="menu__item text-center border">
+                            <h3 class="heading--h3 site-menu__h3 ">Sałatka włoska</h3>
+                            <p class="par">Sałata rzymska, kurczak, suszone pomidory, oliwki, sos vinegret</p>
+                            <a href="#contact" class="btn btn--red btn--circle site-menu__button">Zamów!</a>
+                        </div>
+                    </div>
+        
+                </div>
+            </div>
         </section>
         <section id="location" class="section">
             <h2 class="heading--h2">Lokalizacja</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col wow fadeInLeft">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2560.9329154008915!2d19.846411215717605!3d50.06881797942457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4716595cdd5bb041%3A0x8b3700f41bfe79af!2sWiosenna+20%2C+30-001+Krak%C3%B3w!5e0!3m2!1spl!2spl!4v1535747801843" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
         </section>
-        <section id="contact" class="section">
-            <h2 class="heading--h2">Kontakt</h2></section>
+        <section id="contact" class="section site-contact">
+            <h2 class="heading--h2 site-contact__h2">Kontakt</h2>
+            <div class="blackout site-contact__blackout"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <form action="php/contact.php" method="post" class="form site-contact__form">
+                            <label for="mail" class="form__label"></label><br>
+                            <input name="mail" id="mail" class="form__input" placeholder="Podaj swój adres e-mail"><br>
+                            <label for="subject" class="form__label"></label><br>
+                            <input name="subject" id="subject" class="form__input" placeholder="Podaj temat wiadomości"><br> 
+                            <label for="message" class="form__label"></label><br>
+                            <textarea name="message" id="message" cols="15" rows="5" placeholder="Podaj treść wiadomości" class="form__input site-contact__textarea"></textarea><br>
+                            <input type="submit" value="Wyślij" class="btn btn--outline">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
-    <footer></footer>
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col col--md100 col--lg33">
+                        <p> <i class="fas fa-map-marker"></i>   ul. Wiosenna 20, 30-001 Kraków <br>
+                         <i class="fas fa-phone"></i>   674 370 921 <br>
+                         <i class="far fa-envelope"></i>   kontakt@dolce_wita.pl <br>
+                         <i class="fab fa-facebook"></i>   dolce_kraków <br>
+                         <i class="fab fa-instagram"></i>   dolce_kraków </p>
+            </div>
+                <div class="col col--md100 col--lg33">
+                    <p>
+                        Poniedziałek: 11:00 - 22:00 <br>
+                        Wtorek: 11:00 - 22:00 <br>
+                        Środa: 11:00 - 22:00 <br>
+                        Czwartek: 11:00 - 22:00 <br>
+                        Piątek: 11:00 - 23:00 <br>
+                    </p>
+                </div>
+                <div class="col col--md100 col--lg33 text-center">
+                    <p class="par--dec">Restauracja Dolce Vita</p>
+                </div>
+            
+            </div>
+        </div>
+    </footer>
+    <div id="to_top" class="to-top site-body__to-top">
+        <a href="#top" class="to-top__link">
+            <i class="material-icons">expand_less</i>
+        </a>
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/contact/contact.js"></script>
     <script src="js/scripts.js"></script>
 </body>
 </html>

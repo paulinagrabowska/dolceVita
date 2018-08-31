@@ -1,0 +1,10 @@
+.border {
+    border-radius: $font-base*.15 $font-base*4;
+    border: solid #A5C279 $font-base * .6;
+    transition: .5s;
+    background-color: #fdffef;
+    transform: scale(.95);
+    &:hover {
+    box-shadow: 13px 13px 110px -10px rgba(125,125,125,0.49);
+    }
+}
