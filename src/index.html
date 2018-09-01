@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <script src='https://www.google.com/recaptcha/api.js'></script>
     <title>Restauracja Dolce Vita</title>
 </head>
 <body>
@@ -120,6 +121,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col">
+                        <div class="site-contact__result" id="result"></div>
                         <form action="php/contact.php" method="post" class="form site-contact__form">
                             <label for="mail" class="form__label"></label><br>
                             <input name="mail" id="mail" class="form__input" placeholder="Podaj swój adres e-mail"><br>
@@ -127,7 +129,9 @@
                             <input name="subject" id="subject" class="form__input" placeholder="Podaj temat wiadomości"><br> 
                             <label for="message" class="form__label"></label><br>
                             <textarea name="message" id="message" cols="15" rows="5" placeholder="Podaj treść wiadomości" class="form__input site-contact__textarea"></textarea><br>
-                            <input type="submit" value="Wyślij" class="btn btn--outline">
+                            <label class="form__label"></label>
+                            <div class="g-recaptcha" data-sitekey="6LeLhWoUAAAAAEViy1drItfqxOTlDsKv9lcJSFqa" data-theme="dark"></div> <br>
+                             <input type="submit" value="Wyślij" class="btn btn--outline">
                         </form>
                     </div>
                 </div>
@@ -166,7 +170,7 @@
         </a>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="js/wow.min.js"></script>
+    <script src="js/wow.min.js"></script> 
     <script src="js/contact/contact.js"></script>
     <script src="js/scripts.js"></script>
 </body>

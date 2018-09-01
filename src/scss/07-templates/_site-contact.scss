@@ -3,7 +3,7 @@
     background: url('../img/form.jpg') center/cover no-repeat;
     background-attachment: fixed;
     position: relative;
-    min-height: 90vh;
+    min-height: 100vh;
     width: 98%;
     margin: 1% auto;
     
@@ -18,11 +18,24 @@
         z-index: 1;
     }
 
+    &__result {
+        position: absolute;
+        z-index: 1;
+        font-size: $font-base * 2.5;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        width: 50%;
+        text-align: center;
+        bottom: 2%;
+    }
+
     &__form {
         position: absolute;
         top: 50%;
         left: 50%;
          transform: translate(-50%, -50%);
+         margin-top: 1.5%;
     }
 
     &__textarea {

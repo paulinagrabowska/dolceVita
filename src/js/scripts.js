@@ -97,6 +97,5 @@ $(function(){
         }
     });
 });
-'use strict';
-
+ 'use strict';
 new WOW().init();
